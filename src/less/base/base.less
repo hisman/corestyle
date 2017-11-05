@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: @white;
+}
+
+::selection {
+    background-color: @primary-light;
+    text-shadow: none;
+}
+::-moz-selection {
+    background-color: @primary-light;
+    text-shadow: none;
+}
+
+body, button, input, select, textarea {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    font-weight: @font-weight-regular;
+    line-height: @line-height;
+    color: @black;
+}
+
+h1 {
+    font-size: @font-size-xxl;
+}
+h2 {
+    font-size: @font-size-xl;
+}
+h3 {
+    font-size: @font-size-lg;
+}
+h4 {
+    font-size: @font-size-base;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: @font-weight-bold;
+}
+
+a {
+    .transition();
+    color: @primary;
+    text-decoration: none;
+
+    &:hover, &:active, &:focus {
+        color: @primary-dark;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

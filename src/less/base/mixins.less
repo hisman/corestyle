@@ -1,0 +1,41 @@
+/* Responsive Breakpoint */
+.breakpoint(@size, @rules) {
+    @breakpoint-medium: 768px;
+    @breakpoint-large: 1024px;
+
+    @media screen and (min-width: ~'@{breakpoint-@{size}}') {
+        @rules();
+    }
+}
+
+/* Transition */
+.transition(@property: all, @duration: 0.25s, @ease: ease-out) {
+    transition: @property @duration @ease;
+}
+
+/* Border Radius */
+.rounded(@size: 'base') {
+    @rounded-base: 0.25rem;
+    @rounded-large: 0.5rem;
+    @rounded-full: 9999px;
+
+    border-radius: ~'@{rounded-@{size}}';
+}
+
+/* Grid Column Size */
+.column(@size: 12, @base: 12) {
+     flex-basis: (100% / @base) * @size;
+}
+
+/* Hollow Button */
+.btn-hollow(@color: @primary) {
+    background: none;
+    color: @color;
+}
+
+/* Hover Button */
+.btn-hover(@color: @primary-dark) {
+    background-color: @color;
+    border-color: @color;
+    color: @white;
+}
