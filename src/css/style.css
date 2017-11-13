@@ -418,15 +418,15 @@ body {
   background-color: #FFFFFF;
 }
 ::-moz-selection {
-  background-color: #64B5F6;
+  background-color: #BBDEFB;
   text-shadow: none;
 }
 ::selection {
-  background-color: #64B5F6;
+  background-color: #BBDEFB;
   text-shadow: none;
 }
 ::-moz-selection {
-  background-color: #64B5F6;
+  background-color: #BBDEFB;
   text-shadow: none;
 }
 body,
@@ -468,8 +468,8 @@ a {
   text-decoration: none;
 }
 a:hover,
-a:active,
-a:focus {
+a:focus,
+a:active {
   color: #1976D2;
 }
 img {
@@ -768,4 +768,93 @@ img {
   background-color: #D32F2F;
   border-color: #D32F2F;
   color: #FFFFFF;
+}
+table,
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+table thead,
+.table thead,
+table tbody,
+.table tbody,
+table tfoot,
+.table tfoot {
+  border: 1px solid #CFD8DC;
+}
+table thead,
+.table thead,
+table tfoot,
+.table tfoot {
+  background-color: #ECEFF1;
+}
+table thead th,
+.table thead th,
+table tfoot th,
+.table tfoot th,
+table thead td,
+.table thead td,
+table tfoot td,
+.table tfoot td {
+  font-weight: 700;
+}
+table tbody,
+.table tbody {
+  background-color: #FFFFFF;
+}
+table tr,
+.table tr {
+  border-bottom: 1px solid #CFD8DC;
+}
+table th,
+.table th,
+table td,
+.table td {
+  padding: 0.75rem 0.75rem;
+  text-align: left;
+}
+table th,
+.table th {
+  background-color: #ECEFF1;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  table th,
+  .table th {
+    display: table-cell;
+  }
+}
+table td,
+.table td {
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  table td,
+  .table td {
+    display: table-cell;
+    width: auto;
+  }
+}
+.table--bordered tr {
+  border-bottom: 3px solid #CFD8DC;
+}
+@media screen and (min-width: 768px) {
+  .table--bordered tr {
+    border-bottom: 1px solid #CFD8DC;
+  }
+}
+.table--bordered th,
+.table--bordered td {
+  border-bottom: 1px solid #CFD8DC;
+}
+@media screen and (min-width: 768px) {
+  .table--bordered th,
+  .table--bordered td {
+    border: 1px solid #CFD8DC;
+  }
+}
+.table--striped tbody tr:nth-child(even) {
+  background-color: #ECEFF1;
 }
