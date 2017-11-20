@@ -425,10 +425,6 @@ body {
   background-color: #BBDEFB;
   text-shadow: none;
 }
-::-moz-selection {
-  background-color: #BBDEFB;
-  text-shadow: none;
-}
 body,
 button,
 input,
@@ -668,7 +664,7 @@ img {
   background-color: #2196F3;
   border: 2px solid #2196F3;
   padding: 0.75rem 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-size: 0.875rem;
   color: #FFFFFF;
   line-height: 1;
@@ -704,9 +700,8 @@ img {
   border-width: 1px;
 }
 .btn--large {
-  border-radius: 0.5rem;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   border-width: 3px;
 }
 .btn--expanded {
@@ -768,6 +763,148 @@ img {
   background-color: #D32F2F;
   border-color: #D32F2F;
   color: #FFFFFF;
+}
+.label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.label--checkbox,
+.label--radio {
+  font-weight: 400;
+  cursor: pointer;
+}
+.label--inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.input {
+  border-radius: 0.25rem;
+  outline: 0;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border: 1px solid #90A4AE;
+  padding: 0.5rem 0.75rem;
+  color: #455A64;
+  font-size: 0.875rem;
+  background-color: #FFFFFF;
+}
+.input::-webkit-input-placeholder {
+  color: #90A4AE;
+}
+.input:-ms-input-placeholder {
+  color: #90A4AE;
+}
+.input::-ms-input-placeholder {
+  color: #90A4AE;
+}
+.input::placeholder {
+  color: #90A4AE;
+}
+.input:focus {
+  border-color: #607D8B;
+}
+.input--select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2896, 125, 139%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right 0 center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+}
+.input--select[multiple] {
+  background: none;
+  padding: 0;
+}
+.input--select[multiple] option {
+  padding: 0.5rem 0.75rem;
+}
+.input--margined {
+  margin-bottom: 0.75rem;
+}
+.checkbox,
+.radio {
+  display: inline-block;
+  margin-right: 0.25rem;
+  font-size: 0.875rem;
+  vertical-align: 1px;
+}
+.control {
+  margin-bottom: 1rem;
+  color: #607D8B;
+}
+.control__message {
+  display: block;
+  font-size: 0.75rem;
+}
+.control--alert {
+  color: #F44336;
+}
+.control--alert .input {
+  color: #F44336;
+  border-color: #E57373;
+}
+.control--alert .input::-webkit-input-placeholder {
+  color: #E57373;
+}
+.control--alert .input:-ms-input-placeholder {
+  color: #E57373;
+}
+.control--alert .input::-ms-input-placeholder {
+  color: #E57373;
+}
+.control--alert .input::placeholder {
+  color: #E57373;
+}
+.control--alert .input:focus {
+  border-color: #F44336;
+}
+.control--warning {
+  color: #FF9800;
+}
+.control--warning .input {
+  color: #FF9800;
+  border-color: #FFB74D;
+}
+.control--warning .input::-webkit-input-placeholder {
+  color: #FFB74D;
+}
+.control--warning .input:-ms-input-placeholder {
+  color: #FFB74D;
+}
+.control--warning .input::-ms-input-placeholder {
+  color: #FFB74D;
+}
+.control--warning .input::placeholder {
+  color: #FFB74D;
+}
+.control--warning .input:focus {
+  border-color: #FF9800;
+}
+.control--success {
+  color: #4CAF50;
+}
+.control--success .input {
+  color: #4CAF50;
+  border-color: #81C784;
+}
+.control--success .input::-webkit-input-placeholder {
+  color: #81C784;
+}
+.control--success .input:-ms-input-placeholder {
+  color: #81C784;
+}
+.control--success .input::-ms-input-placeholder {
+  color: #81C784;
+}
+.control--success .input::placeholder {
+  color: #81C784;
+}
+.control--success .input:focus {
+  border-color: #4CAF50;
 }
 table,
 .table {

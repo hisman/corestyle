@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CoreStyle - Form</title>
+    <meta name="description" content="">
+
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid">
+        <header class="grid__item">
+            <h1>CoreStyle</h1>
+
+            <h2>Form</h2>
+        </header>
+    </div>
+
+    <form action="" method="post">
+        <div class="grid">
+            <section class="grid__item grid__item--medium-6">
+                <div class="control">
+                    <label for="text" class="label">Text</label>
+                    <input id="text" class="input" type="text" placeholder="Text">
+                </div>
+
+                <div class="control">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" class="input" type="email" placeholder="Email">
+                </div>
+
+                <div class="control">
+                    <label for="number" class="label">Number</label>
+                    <input id="number" class="input" type="number" placeholder="Number">
+                </div>
+
+                <div class="control">
+                    <label for="textarea" class="label">Textarea</label>
+                    <textarea id="textarea" class="input" placeholder="Textarea" rows="5"></textarea>
+                </div>
+
+                <div class="control">
+                    <label for="select" class="label">Select</label>
+                    <select id="select" class="input input--select">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="control">
+                    <label for="select-multiple" class="label">Select Multiple</label>
+                    <select id="select-multiple" class="input input--select" multiple size="4">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 3</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="grid__item grid__item--medium-6">
+                <div class="control">
+                    <label class="label">Checkbox</label>
+                    <label class="label label--checkbox"><input class="checkbox" type="checkbox"> Checkbox 1</label>
+                    <label class="label label--checkbox"><input class="checkbox" type="checkbox"> Checkbox 2</label>
+                    <label class="label label--checkbox"><input class="checkbox" type="checkbox"> Checkbox 3</label>
+                </div>
+
+                <div class="control">
+                    <label class="label">Checkbox Inline</label>
+                    <label class="label label--checkbox label--inline"><input class="checkbox" type="checkbox"> Checkbox 1</label>
+                    <label class="label label--checkbox label--inline"><input class="checkbox" type="checkbox"> Checkbox 2</label>
+                    <label class="label label--checkbox label--inline"><input class="checkbox" type="checkbox"> Checkbox 3</label>
+                </div>
+
+                <div class="control">
+                    <label class="label">Radio</label>
+                    <label class="label label--radio"><input class="radio" type="radio" name="radio"> Radio 1</label>
+                    <label class="label label--radio"><input class="radio" type="radio" name="radio"> Radio 2</label>
+                    <label class="label label--radio"><input class="radio" type="radio" name="radio"> Radio 3</label>
+                </div>
+
+                <div class="control">
+                    <label class="label">Radio Inline</label>
+                    <label class="label label--radio label--inline"><input class="radio" type="radio" name="radio"> Radio 1</label>
+                    <label class="label label--radio label--inline"><input class="radio" type="radio" name="radio"> Radio 2</label>
+                    <label class="label label--radio label--inline"><input class="radio" type="radio" name="radio"> Radio 3</label>
+                </div>
+
+                <div class="control control--alert">
+                    <label for="alert" class="label">Alert</label>
+                    <input id="alert" class="input" type="text" placeholder="Alert">
+                    <span class="control__message">Quibusdam cumque iure.</span>
+                </div>
+
+                <div class="control control--warning">
+                    <label for="warning" class="label">Warning</label>
+                    <input id="warning" class="input" type="text" placeholder="Warning">
+                    <span class="control__message">Sequi nesciunt eveniet laudantium doloremque hic mollitia possimus aut.</span>
+                </div>
+
+                <div class="control control--success">
+                    <label for="success" class="label">Success</label>
+                    <input id="success" class="input" type="text" placeholder="Success">
+                    <span class="control__message">Perspiciatis magnam qui cum et laborum recusandae architecto nobis.</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="grid">
+            <div class="grid__item">
+                <button class="btn btn--large btn--expanded" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

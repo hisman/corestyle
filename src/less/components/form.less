@@ -1,0 +1,126 @@
+.label {
+    display: block;
+    margin-bottom: @space-1;
+    font-size: @font-size-sm;
+    font-weight: @font-weight-semibold;
+
+    &--checkbox, &--radio {
+        font-weight: @font-weight-regular;
+        cursor: pointer;
+    }
+
+    &--inline {
+        display: inline-block;
+        margin-right: @space-2;
+    }
+}
+
+.input {
+    .rounded();
+    outline: 0;
+    display: block;
+    appearance: none;
+    width: 100%;
+    border: 1px solid @grey-light;
+    padding: @space-2 @space-3;
+    color: @grey-dark;
+    font-size: @font-size-sm;
+    background-color: @white;
+
+    &::placeholder {
+        color: @grey-light;
+    }
+
+    &:focus {
+        border-color: @grey;
+    }
+
+    &--select {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2896, 125, 139%29'></polygon></svg>");
+        background-origin: content-box;
+        background-position: right 0 center;
+        background-repeat: no-repeat;
+        background-size: 9px 6px;
+
+        &[multiple] {
+            background: none;
+            padding: 0;
+
+            option {
+                padding: @space-2 @space-3;
+            }
+        }
+    }
+
+    &--margined {
+        margin-bottom: @space-3;
+    }
+}
+
+.checkbox, .radio {
+    display: inline-block;
+    margin-right: @space-1;
+    font-size: @font-size-sm;
+    vertical-align: 1px;
+}
+
+.control {
+    margin-bottom: @space-4;
+    color: @grey;
+
+    &__message {
+        display: block;
+        font-size: @font-size-xs;
+    }
+
+    &--alert {
+        color: @alert;
+
+        .input {
+            color: @alert;
+            border-color: @alert-light;
+
+            &::placeholder {
+                color: @alert-light;
+            }
+
+            &:focus {
+                border-color: @alert;
+            }
+        }
+    }
+
+    &--warning {
+        color: @warning;
+
+        .input {
+            color: @warning;
+            border-color: @warning-light;
+
+            &::placeholder {
+                color: @warning-light;
+            }
+
+            &:focus {
+                border-color: @warning;
+            }
+        }
+    }
+
+    &--success {
+        color: @success;
+
+        .input {
+            color: @success;
+            border-color: @success-light;
+
+            &::placeholder {
+                color: @success-light;
+            }
+
+            &:focus {
+                border-color: @success;
+            }
+        }
+    }
+}
