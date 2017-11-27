@@ -1,0 +1,110 @@
+.card {
+    .rounded();
+    border: 1px solid @grey-lighter;
+    background: @white;
+    overflow: hidden;
+
+    &__header, &__body, &__footer {
+        padding: @space-3 @space-4;
+    }
+
+    &__header, &__footer {
+        background: @grey-lightest;
+    }
+
+    &__header {
+        border-bottom: 1px solid @grey-lighter;
+    }
+
+    &__footer {
+        border-top: 1px solid @grey-lighter;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid @grey-lighter;
+    }
+
+    &__body {
+        font-size: @font-size-sm;
+    }
+
+    &--primary {
+        border-color: @primary-dark;
+        background: @primary;
+        color: @white;
+
+        .card__header, .card__footer {
+            background: @primary;
+        }
+
+        .card__header, .card__image, .card__footer {
+            border-color: @primary-dark;
+        }
+    }
+
+    &--secondary {
+        border-color: @secondary-dark;
+        background: @secondary;
+        color: @white;
+
+        .card__header, .card__footer {
+            background: @secondary;
+        }
+
+        .card__header, .card__image, .card__footer {
+            border-color: @secondary-dark;
+        }
+    }
+
+    &--success {
+        border-color: @success-dark;
+        background: @success;
+        color: @white;
+
+        .card__header, .card__footer {
+            background: @success;
+        }
+
+        .card__header, .card__image, .card__footer {
+            border-color: @success-dark;
+        }
+    }
+
+    &--warning {
+        border-color: @warning-dark;
+        background: @warning;
+        color: @white;
+
+        .card__header, .card__footer {
+            background: @warning;
+        }
+
+        .card__header, .card__image, .card__footer {
+            border-color: @warning-dark;
+        }
+    }
+
+    &--alert {
+        border-color: @alert-dark;
+        background: @alert;
+        color: @white;
+
+        .card__header, .card__footer {
+            background: @alert;
+        }
+
+        .card__header, .card__image, .card__footer {
+            border-color: @alert-dark;
+        }
+    }
+
+    &--light {
+        background: @white;
+
+        .card__header, .card__footer {
+            background: @white;
+        }
+    }
+}
