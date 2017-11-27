@@ -807,6 +807,8 @@ img {
 }
 .input:focus {
   border-color: #607D8B;
+  -webkit-box-shadow: 0 0 5px #CFD8DC;
+          box-shadow: 0 0 5px #CFD8DC;
 }
 .input--select {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2896, 125, 139%29'></polygon></svg>");
@@ -861,6 +863,8 @@ img {
 }
 .control--alert .input:focus {
   border-color: #F44336;
+  -webkit-box-shadow: 0 0 5px #FFCDD2;
+          box-shadow: 0 0 5px #FFCDD2;
 }
 .control--warning {
   color: #FF9800;
@@ -883,6 +887,8 @@ img {
 }
 .control--warning .input:focus {
   border-color: #FF9800;
+  -webkit-box-shadow: 0 0 5px #FFE0B2;
+          box-shadow: 0 0 5px #FFE0B2;
 }
 .control--success {
   color: #4CAF50;
@@ -905,6 +911,8 @@ img {
 }
 .control--success .input:focus {
   border-color: #4CAF50;
+  -webkit-box-shadow: 0 0 5px #C8E6C9;
+          box-shadow: 0 0 5px #C8E6C9;
 }
 table,
 .table {
