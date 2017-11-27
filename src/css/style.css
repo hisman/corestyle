@@ -1117,3 +1117,27 @@ table td,
 .card--light .card__footer {
   background: #FFFFFF;
 }
+.message {
+  background-color: #2196F3;
+  border-left: 10px solid #1976D2;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+}
+.message--secondary {
+  background-color: #607D8B;
+  border-color: #455A64;
+}
+.message--success {
+  background-color: #4CAF50;
+  border-color: #388E3C;
+}
+.message--warning {
+  background-color: #FF9800;
+  border-color: #F57C00;
+}
+.message--alert {
+  background-color: #F44336;
+  border-color: #D32F2F;
+}
