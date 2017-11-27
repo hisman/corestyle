@@ -53,3 +53,52 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+p {
+    margin: 0 0 @space-4;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 @space-4 @space-5;
+
+    ul, ol {
+        margin-bottom: 0;
+    }
+}
+li {
+    padding: @space-1;
+}
+
+dl {
+    margin: 0 0 @space-4;
+}
+dt {
+    font-weight: @font-weight-bold;
+}
+dd {
+    margin: 0 0 @space-2;
+}
+
+blockquote {
+    margin: 0 0 @space-4;
+    padding: @space-4;
+    border-left: 2px solid @grey;
+    background: @grey-lightest;
+}
+cite {
+    display: block;
+    font-size: @font-size-sm;
+    margin-top: @space-2;
+}
+
+code {
+    background: @grey-lightest;
+    padding: @space-1;
+}
+
+pre {
+    background: @grey-lightest;
+    padding: @space-4;
+    margin: 0 0 @space-4;
+}

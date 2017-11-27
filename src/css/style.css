@@ -472,6 +472,52 @@ img {
   max-width: 100%;
   height: auto;
 }
+p {
+  margin: 0 0 1rem;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 1rem 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+li {
+  padding: 0.25rem;
+}
+dl {
+  margin: 0 0 1rem;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 0.5rem;
+}
+blockquote {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-left: 2px solid #607D8B;
+  background: #ECEFF1;
+}
+cite {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+code {
+  background: #ECEFF1;
+  padding: 0.25rem;
+}
+pre {
+  background: #ECEFF1;
+  padding: 1rem;
+  margin: 0 0 1rem;
+}
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,6 +879,10 @@ img {
 }
 .input--margined {
   margin-bottom: 0.75rem;
+}
+.input[readonly],
+.input[disabled] {
+  background-color: #ECEFF1;
 }
 .checkbox,
 .radio {
